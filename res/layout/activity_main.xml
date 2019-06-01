@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.uidemo.MainActivity" >
+
+    
+    <com.example.uidemo.view.NoScollViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bottom_tab_bg"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="首页"
+            android:textColor="@color/text_bg_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_news_selector"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="新闻中心"
+            android:textColor="@color/text_bg_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_smart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_smart_selector"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="智慧服务"
+            android:textColor="@color/text_bg_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_gov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_gov_selector"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="政务"
+            android:textColor="@color/text_bg_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_setting_selector"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="设置"
+            android:textColor="@color/text_bg_selector" />
+    </RadioGroup>
+
+</LinearLayout>
